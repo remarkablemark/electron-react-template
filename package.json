@@ -13,6 +13,7 @@
     "template"
   ],
   "dependencies": {
+    "babel-preset-react-hmre": "^1.1.1",
     "react": "^15.0.2",
     "react-dom": "^15.0.2"
   },
@@ -23,7 +24,8 @@
     "babel-preset-react": "^6.5.0",
     "electron-debug": "^0.7.0",
     "electron-prebuilt": "^0.37.2",
-    "webpack": "^1.13.0"
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1"
   },
   "license": "MIT"
 }
