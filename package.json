@@ -5,7 +5,9 @@
   "author": "Mark <mark@remarkablemark.org>",
   "main": "main.js",
   "scripts": {
-    "start": "webpack && electron main.js"
+    "start": "npm run hmr & npm run electron",
+    "electron": "electron main.js",
+    "hmr": "webpack-dev-server --config webpack.development.config.js"
   },
   "keywords": [
     "electron",
