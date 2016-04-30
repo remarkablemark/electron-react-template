@@ -1,0 +1,12 @@
+{
+  "name": "electron-react-template",
+  "version": "0.0.1",
+  "description": "A template for building Electron apps with React.",
+  "author": "Mark <mark@remarkablemark.org>",
+  "keywords": [
+    "electron",
+    "react",
+    "template"
+  ],
+  "license": "MIT"
+}
