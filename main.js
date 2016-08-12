@@ -7,9 +7,11 @@ var electron = require('electron');
 var path = require('path');
 
 // debug
-require('electron-debug')({
-    //showDevTools: true
-});
+if (process.env.NODE_ENV === 'development') {
+    require('electron-debug')({
+        showDevTools: true
+    });
+}
 
 var mainWindow;
 
