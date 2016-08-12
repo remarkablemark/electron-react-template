@@ -10,14 +10,17 @@ If you are looking for something more complex, then check out [electron-react-bo
 $ npm install
 ```
 
-## Usage
+## Run
 
-Run the app in development mode:
+Run in production mode:
 ```sh
 $ npm start
 ```
 
-And work on it in the `./app/` directory.
+Run in development mode:
+```sh
+$ npm run dev
+```
 
 ## License
 
