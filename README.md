@@ -22,6 +22,20 @@ Run in development mode:
 $ npm run dev
 ```
 
+Directory structure:
+```
+.
+├── ...
+├── main.js           # initiates electron
+└── app               # app directory
+    ├── index.html    # entry html file
+    ├── main.js       # entry javascript file
+    ├── components    # react components
+        └── ...
+    └── build         # compiled files from webpack
+        └── ...
+```
+
 ## License
 
-MIT
+[MIT](https://github.com/remarkablemark/electron-react-template/blob/master/LICENSE)
