@@ -5,7 +5,8 @@
   "author": "Mark <mark@remarkablemark.org>",
   "main": "main.js",
   "scripts": {
-    "start": "npm run hmr & npm run electron",
+    "start": "webpack && NODE_ENV=production npm run electron",
+    "dev": "npm run hmr & NODE_ENV=development npm run electron",
     "electron": "electron main.js",
     "hmr": "webpack-dev-server --config webpack.development.config.js"
   },

@@ -5,7 +5,16 @@
         <title>electron-react-template</title>
     </head>
     <body>
-        <div id='app'></div>
-        <script src='http://localhost:3000/app/build/main.js'></script>
+        <div id="app"></div>
+        <script>
+            (function(){
+                var src = 'build/main.js';
+                if (process.env.NODE_ENV === 'development') {
+                    var url = require('url');
+                    src = url.resolve('http://localhost:3000', 'app/' + src);
+                }
+                document.write('<script src="' + src + '"><\/script>');
+            })();
+        </script>
     </body>
 </html>
