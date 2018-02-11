@@ -7,6 +7,8 @@
   "scripts": {
     "start": "webpack && NODE_ENV=production npm run electron",
     "dev": "npm run hmr & NODE_ENV=development npm run electron",
+    "winstart": "webpack && set NODE_ENV=production && npm run electron",
+    "windev": "npm run hmr & set NODE_ENV=development && npm run electron",
     "electron": "electron main.js",
     "hmr": "webpack-dev-server --config webpack.development.config.js"
   },
